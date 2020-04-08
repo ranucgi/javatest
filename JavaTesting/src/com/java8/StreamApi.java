@@ -1,5 +1,6 @@
 package com.java8;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -12,5 +13,11 @@ public static void main(String[] args) {
       for(Integer a:list){
     	  System.out.println(a);
       }
+      String x="ranu";
+      List<String> obj=new ArrayList<>();
+   obj.add("ranu");
+   obj.add("rash");
+   obj.stream().filter(val->val!=null).forEach(val->val.equals("ranu"));
+      
 }
 }

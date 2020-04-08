@@ -6,6 +6,9 @@ public class ArrayTest {
 	System.out.println("raa");
 
 	System.out.println("DSfgdsfdsfs");
+<<<<<<< HEAD
 
+=======
+>>>>>>> 97e494ae99fb3f848ee3a5e066ecc611f240e116
 }
 }
