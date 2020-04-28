@@ -12,7 +12,7 @@ public class ResolvedDeadLockTest {
                 synchronized (a) {
                     // Adding delay so that both threads can start trying to
 					// lock resources
-					System.out.println("gfdgfdg");
+					System.out.println("synchronized  block 1 ");
 				   
                     // Thread-1 have A but need B also
                     synchronized (b) {
@@ -23,10 +23,10 @@ public class ResolvedDeadLockTest {
         };
         Runnable block2 = new Runnable() {
             public void run() {
-                synchronized (a) {
-                	System.out.println("ff");
+                synchronized (b) {
+                	System.out.println("synchronized block 2 ");
                     // Thread-2 have B but need A also
-                    synchronized (b) {
+                    synchronized (a) {
                         System.out.println("In block 2");
                     }
                 }

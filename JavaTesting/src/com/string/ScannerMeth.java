@@ -7,9 +7,11 @@ public class ScannerMeth {
 		System.out.println("enter name");
 		Scanner sc=new Scanner(System.in);
 		String name=sc.nextLine();
+		System.out.println(name);
+		System.out.println("enter name");
 		String z=sc.next();
 		System.out.print(z);
-		System.out.print(name);
+		
 		//int x=sc.nextInt();
 		//System.out.println(x);
 	}

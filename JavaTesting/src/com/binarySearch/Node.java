@@ -5,6 +5,12 @@ public class Node {
 	Node left;
 	Node right;
 	
+	public Node(int data) {
+		this.data = data;
+		this.left=null;
+		this.right=null;
+	}
+	
 	public int getData() {
 		return data;
 	}
@@ -14,9 +20,7 @@ public class Node {
 		this.right=null;
 	}
 	
-	public Node(int data) {
-		this.data = data;
-	}
+	
 	public Node getLeft() {
 		return left;
 	}
