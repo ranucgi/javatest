@@ -4,7 +4,7 @@ public class RemoveChar {
 	public static void main(String[] args) {
     char a='Z';
     if(a>123){
-    	System.out.println("Fgfd");
+    	System.out.println("Hello ranu...");
     }
 	//int x=a;
 	//System.out.println(x);
