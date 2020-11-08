@@ -8,6 +8,7 @@ public class Array8 {
 	public static void main(String[] args) {
 		int a[]={1,2,3,4};
 		ArrayList x=(ArrayList) Arrays.asList(a);
+		System.out.println("hello ranu testing...");
 		
 	}
 
