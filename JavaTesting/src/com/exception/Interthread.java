@@ -25,9 +25,9 @@ public class Interthread {
 		Sum object=new Sum();
 		CheckInter obj=new CheckInter(object);
 		obj.start();
-		synchronized(obj){
+		/*synchronized(obj){
 			obj.wait();
-		}
+		}*/
 		
 		System.out.println("sum is"+object.add);
 	}
