@@ -13,7 +13,6 @@ class  A{
 			System.out.println("b");
 		}	
 	}
-	
 }
 public  class First {
 	public static void main(String[] args) {
