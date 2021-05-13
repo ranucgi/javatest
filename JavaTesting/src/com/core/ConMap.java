@@ -2,7 +2,6 @@ package com.core;
 
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 
 public class ConMap {
 	public static void main(String[] args) {
@@ -11,7 +10,7 @@ public class ConMap {
 		map.put(2, "b");
 		System.out.println(map.get(1));
 		 Iterator<Integer> itr = map.keySet().iterator();
-         
+        
 	        //Using synchronized block is advisable
 	        
 	            while(itr.hasNext()) {
