@@ -2,8 +2,9 @@ package com.thread;
 
 class Multiplication{
 	public  void matrix(int x) {
-		System.out.println("ssdsj");
+		System.out.println("ssdsj......"+Thread.currentThread().getName());
 		synchronized(this){
+			System.out.println(Thread.currentThread().getName());
 		for(int i=1;i<=5;i++){
 			try {
 				System.out.println(x*i);
@@ -17,8 +18,8 @@ class Multiplication{
 		}
 		}
 	}
-	public void displaydata(String name){
-		System.out.println("ds;fls,fd..............."+name);
+	public void displaydata(){
+		System.out.println(Thread.currentThread().getName()+"...............");
 	}
 }
 
@@ -31,7 +32,7 @@ class MultiF extends Thread{
     }
     public void run(){
     	object.matrix(val);
-    	object.displaydata(Thread.currentThread().getName());   	
+    	object.displaydata();   	
     }
 	
 }

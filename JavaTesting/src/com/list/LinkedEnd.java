@@ -31,6 +31,15 @@ class LinkEnd{
 			temp=temp.next;
 		}
 	}
+	public void insertAt(int data, int pos) {
+		 Node node=  createNode(data);
+		 Node temp=root;
+		 for(int i=1;i<pos-1;i++){
+			 temp=temp.next;
+		 }
+		  node.next=temp.next;
+		  temp.next=node;
+	}
 	public void insertAtPos(int data, int pos) {
 		Node node=createNode(data);
 		Node prev,temp;
@@ -56,6 +65,16 @@ class LinkEnd{
 		 size--;
 	
 	}
+	public void deleteAt(int pos) {
+		Node temp=root;
+		for(int i=1;i<pos-1;i++){
+			temp=temp.next;
+		}
+		temp.next=temp.next.next;
+		size--;
+	}
+	 
+	
 }
 public class LinkedEnd {
 	public static void main(String[] args) {
@@ -66,9 +85,15 @@ public class LinkedEnd {
 		obj.insertAtEnd(4);
 		obj.displayrecord();
 		System.out.println("insert at postion 3");
-		obj.insertAtPos(5,3);
+		obj.insertAt(5,3);
+		obj.insertAt(6,4);
+		obj.insertAt(7,5);
+		//obj.insertAtPos(5,3);
 		obj.displayrecord();
 		System.out.println("delete at  postion 4");
+		obj.deleteAt(4);
+		obj.displayrecord();
+		/*System.out.println("delete at  postion 4");
 		obj.deleteAtPosition(4);
 		obj.displayrecord();
 		System.out.println("delete at  postion 2");
@@ -76,7 +101,7 @@ public class LinkedEnd {
 		obj.displayrecord();
 		System.out.println("insert at the end");
 		obj.insertAtEnd(9);
-		obj.displayrecord();
+		obj.displayrecord();*/
 		
 
 	}

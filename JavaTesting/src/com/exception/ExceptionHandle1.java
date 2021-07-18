@@ -5,7 +5,7 @@ public class ExceptionHandle1 {
 		try{
 			errorMethod();
 			System.out.println("welcome to after error method...");
-		}catch(	Error e){
+		}catch(	Exception e){
 			System.out.println("main catch block...");
 		}finally{
 			System.out.println("main finally block");

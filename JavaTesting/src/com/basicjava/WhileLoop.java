@@ -20,11 +20,11 @@ public class WhileLoop {
 		
 		
 		//do-while
-		int j=1;
+		int j=0;
 		do{
 			System.out.println("hello");
 			j++;
-		}while(j<1);
+		}while(j<=1);
 		
 			
 	}

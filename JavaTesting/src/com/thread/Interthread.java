@@ -1,10 +1,10 @@
 package com.thread;
 class Sum{
 	int add=0;
-	public void sum(){
-	for(int i=1;i<=5;i++){
+	public synchronized void sum(){
+	for(int i=1;i<=10;i++){
 		add=i+add;
-	}
+	   }this.notify();
 	}
 }
 class CheckInter extends Thread{
@@ -27,9 +27,10 @@ public class Interthread {
 		obj.start();
 		synchronized(obj){
 			obj.wait();
+			Thread.sleep(10000);
 		}
 		
-		System.out.println("sum is"+object.add);
+		System.out.println("sum is    "+object.add);
 	}
 
 }

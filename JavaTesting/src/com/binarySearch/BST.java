@@ -140,7 +140,7 @@ public class BST {
                obj.add(25);
                obj.add(2);
                obj.printData();
-               //obj.minval();
+               obj.minval();
                obj.maxval();
                obj.level();
                obj.treeLevel();

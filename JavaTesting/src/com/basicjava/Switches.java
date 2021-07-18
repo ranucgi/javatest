@@ -9,23 +9,26 @@ package com.basicjava;
 //2 cases can not be same, otherwise compile exception
 public class Switches {
 	public static void main(String[] args) {
-		int val=20;
+		int val=4;
 		switch(val){
+		
 		case 4:
 			System.out.println("val 4");
-			break;
+			//break;
 		
 		case 7:
 			System.out.println("val 5");
+			//break;
+			
+		default:
+			System.out.println("no exist....");
 			break;
 		
 		
 	  case 20:
 			System.out.println("val is 10");
 			
-	  default:
-			System.out.println("no exist....");
-			break;
+	  
 			}
 	}
 

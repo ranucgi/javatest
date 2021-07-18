@@ -1,6 +1,9 @@
 package com.java8;
+//an interface have only one abstract method
+//runaaable interface is a function interface
+//lambda expression is used
  interface Func{
-	void show(int x);
+	void show(int x,int y);
  }
  /*class FuncIm implements Func{
 	 public void show(int x){
@@ -17,10 +20,10 @@ public interface FuncInterface {
 				System.out.println("annonymous....."+x);
 			}
 		};obj.show(7);*/
-		Func obj=(int x)->{ x=x*x;
+		Func obj=(int x,int y)->{ x=x*y;
 			  
 				System.out.println("annonymous.....with Lambda...."+x);
 			
-		};obj.show(8);
+		};obj.show(8,4);
 	}
 }

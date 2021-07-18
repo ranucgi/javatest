@@ -3,7 +3,7 @@ package com.stack;
 class StackOp{
 	int size, top;
 	int a[];
-	static final int max=5;
+	static final int max=7;
 	StackOp(){
 		size=0;
 		top=-1;
@@ -31,28 +31,49 @@ class StackOp{
 		for(int i=0;i<size;i++){
 			System.out.println(a[i]);
 		}
-		System.out.println("top to bottom...........");
+		/*System.out.println("top to bottom...........");
 		for(int i=size-1;i>=0;i--){
 			System.out.println(a[i]);
+		}*/
+	}
+	public void sorting() {
+		int size=this.size;
+		for(int i=0;i<size;i++){
+			for(int j=0;j<size-1-i;j++){
+				if(a[this.top-i]<a[this.top-1-j-i]){
+					int temp=a[this.top-i];
+					a[this.top-i]=a[this.top-1-j-i];
+					a[this.top-1-j-i]=temp;
+				}
+			}
+			
+			
+			
 		}
+		
 	}
 }
 public class StackImpl {
 	public static void main(String[] args) {
 		StackOp obj=new StackOp();
 		obj.push(10);
-		obj.push(20);
-		obj.push(30);
-		obj.push(40);
-		obj.push(50);
+		obj.push(2);
+		obj.push(7);
+		obj.push(6);
+		obj.push(5);
+		obj.push(1);
+		obj.push(12);
 		obj.display();
-		obj.pop();
-		obj.pop();
-		obj.pop();
-		obj.push(60);
+		obj.sorting();
 		obj.display();
-	    obj.pop();
-	    obj.display();
+		
+		//obj.pop();
+		//obj.pop();
+		//obj.pop();
+		//obj.push(60);
+		//obj.display();
+	    //obj.pop();
+	    //obj.display();
 		
 		
 		

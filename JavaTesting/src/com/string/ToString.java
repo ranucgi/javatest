@@ -32,8 +32,6 @@ class Emp{
 			return false;
 		return true;
 	}
-	
-	
 }
 
 public class ToString {

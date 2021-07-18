@@ -29,6 +29,8 @@ public class ListTest {
 	while(it.hasNext()){
 		System.out.println(it.next());
 	}
+	System.out.println("Lamda expression.........");
+	//list.forEach(i->System.out.println(i));
 		
 		
 	}

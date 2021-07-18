@@ -41,7 +41,7 @@ public class CustomArray<E> {
 			element[index]=element[index+1];
 			index++;
 		}
-		element[index]=null;
+		//element[index]=null;
 		size--;
 	}   
 	

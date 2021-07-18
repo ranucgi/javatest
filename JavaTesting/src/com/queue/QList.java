@@ -8,16 +8,17 @@ class QueList{
 		front=-1;
 		rear=-1;
 	}
-	public void enQue(int val){
-		if(isFull())
+	public int enQue(int val){
+		if(isFull()){
 			System.out.println("Queue  Is full..........");
-		else if(isEmpty()){
+			return -1;
+		}else if(isEmpty()){
 			front=0 ;
 		    rear=0;
 		 }else
 			rear=rear+1;
 		
-		a[rear]=val;
+		return a[rear]=val;
 		
 	}
 	private boolean isFull() {
@@ -58,12 +59,23 @@ public class QList {
 		obj.enQue(20);
 		obj.enQue(30);
 		obj.enQue(40);
-		obj.deQueue();
 		obj.enQue(50);
-		obj.deQueue();
 		obj.enQue(60);
+		obj.enQue(70);
+		obj.display();
+		System.out.println("delete..10");
 		obj.deQueue();
 		obj.display();
+		obj.enQue(80);
+		obj.display();
+		//System.out.println("add 3-7..");
+		
+		//obj.deQueue();
+		//obj.enQue(50);
+		//obj.deQueue();
+		//obj.enQue(60);
+		//obj.deQueue();
+		//obj.display();
 	}
 
 }

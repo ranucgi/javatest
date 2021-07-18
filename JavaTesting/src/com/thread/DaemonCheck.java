@@ -13,9 +13,10 @@ public class DaemonCheck {
 		System.out.println(Thread.currentThread().getName());
 		System.out.println(Thread.currentThread().isDaemon());
 		FirstCheck obj=new FirstCheck();
+		//obj.setDaemon(true);
 		obj.start();
-		obj.setDaemon(true);
 		System.out.println("main thread...........");
+		//System.exit(0);
 		
 	}
 

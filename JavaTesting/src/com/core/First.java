@@ -18,8 +18,9 @@ public  class First {
 	public static void main(String[] args) {
 		A obj=new A();
 		obj.show();
-		A ob=new B();
-		ob.show();
+		A.B.show();
+		//B ob=new B();
+		//ob.show();
 		
 	}
 	

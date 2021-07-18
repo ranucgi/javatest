@@ -6,7 +6,7 @@ public class Insertion {
 		for(int i=1;i<a.length;i++){
 			int temp=a[i];
 			int hole=i;
-			while(hole>0 && a[hole-1]>a[hole]){
+			while(hole>0 && a[hole-1]>temp){
 				a[hole]=a[hole-1];
 				hole=hole-1;
 			}

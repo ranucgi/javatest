@@ -11,9 +11,13 @@ public class ArrayList {
 		obj.add(12);
 		obj.add(18);
 		obj.add(new Integer(1));
-		obj.size();
-		obj.delete(6);
+		
+		System.out.println(obj.size()+".................");
 		obj.show();
+		obj.delete(6);
+		System.out.println("delete.................");
+		obj.show();
+		System.out.println(obj.size()+".................");
 		
 	}
 

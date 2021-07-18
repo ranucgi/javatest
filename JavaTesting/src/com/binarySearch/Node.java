@@ -19,8 +19,6 @@ public class Node {
 		this.left=null;
 		this.right=null;
 	}
-	
-	
 	public Node getLeft() {
 		return left;
 	}
@@ -33,6 +31,4 @@ public class Node {
 	public void setRight(Node right) {
 		this.right = right;
 	}
-		
-
 }

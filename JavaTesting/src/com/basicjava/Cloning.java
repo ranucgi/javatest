@@ -10,11 +10,12 @@ public Object clone() throws CloneNotSupportedException{
 public class Cloning {
 	public static void main(String[] args) throws CloneNotSupportedException {
 		Cab obj=new Cab();
-		System.out.println(obj.x);
 		Cab ob=obj;
+		ob.x=9;
 	    Cab c=(Cab)obj.clone();
 		 c.x=10;
-		System.out.println(obj.x);
+		 System.out.println(obj.x);
+		System.out.println(c.x);
 	}
 
 }

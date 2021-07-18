@@ -12,9 +12,8 @@ public class LambdaEx {
 			}
 		};
 		obj.show();*/
-		obj=()->{
-			System.out.println("imp");
-		};
+		obj=()->{};
+		
 		obj.show();
 	 }
 
